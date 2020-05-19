@@ -51,6 +51,17 @@ namespace MultiBindingTest.ViewModels
             }
         }
         #endregion
-
+        #region Number
+        private int number;
+        public int Number
+        {
+            get { return number; }
+            set
+            {
+                number = value;
+                OnPropertyChanged();
+            }
+        }
+        #endregion
     }
 }
